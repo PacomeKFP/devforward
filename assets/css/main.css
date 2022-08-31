@@ -1,0 +1,517 @@
+﻿body {
+	margin: -1.47% 0 0 0;
+	overflow-x:hidden;
+}
+#main {
+	margin-top: 1%;
+	padding: 7%;
+}
+form {
+	margin: 0 0 0 29%;
+}
+.page {
+	display: inline-block;
+}
+.error {
+	margin: 0;
+	width: 33.33333333%;
+}
+#obj{
+	height:10%;
+	display:inline-block;	
+}
+.msg-inter {
+	float: left;
+	padding: 1mm;
+	margin-bottom: 2%;
+	position: relative;
+	margin-bottom: 5mm;
+	background-color: gray;
+	width: 105%;
+}
+.inter-name {
+	float: left;
+	display: inline-block;
+	font-weight: 500;
+}
+.inter-statut-on {
+	margin-top: 5mm;
+	float: left;
+	width: auto;
+	color: greenyellow;
+	display: inline-block;
+	margin-left: -2.5mm;
+	font-weight: 600;
+}
+.inter-statut-off {
+	margin-top: 5mm;
+	float: left;
+	width: auto;
+	color: #ff9200;
+	display: inline-block;
+	margin-left: -2.5mm;
+	font-weight: 600;
+}
+.msg-content {
+	padding: 2mm;
+	width: 95%;
+}
+.display {
+	display: inline-block;
+	margin-top: -10mm;
+	color: white;
+	width: 6.5mm;
+	height: 6.5mm;
+	border-radius: 50%;
+	background-color: white;
+	color: black;
+}
+.msgText {
+	display: inline-block;
+	overflow-y: hidden;
+	width: 50%;
+	resize: none;
+}
+.msg-send-btn {
+	display: inline-block;
+	margin: -6.5% 0 0 0;
+}
+.msg-send-btn:hover {
+	cursor: pointer;
+	background-color: burlywood;
+	border-radius: 10%;
+}
+.msg-body {
+	margin-top: 20mm;
+}
+/*Structure de la page user*/
+.page-header {
+	/*margin-top: -4mm;*/
+margin-top: 2.75%;
+	display: block;
+	background-color: #888888;
+	padding: 0;
+	width: 100%;
+}
+.nbr-amis {
+	font-size: x-large;
+	font-family: Andalus;
+	font-weight: bold;
+}
+.select {
+	width: 5mm;
+	display: inline-block;
+}
+.right:hover {
+	overflow: auto;
+}
+.msg-box {
+	border-radius: 5mm 5mm 0 0;
+	width: 6.5cm;
+	height: 9.5cm;;
+	background-color: white;
+	position: fixed;
+	margin-left: 47%;
+	margin-top: -2.25%;
+	visibility: hidden;
+	border: orange solid medium;
+	resize: both;
+	user-select: none;
+	-moz-user-select: none;
+	-moz-user-drag: auto;
+}
+/*.btn-prime:hover{*/
+/*height:8.5mm;*/
+/*width:20mm;*/
+/*margin-top:-2mm;*/
+/*margin-left:12mm;*/
+/*}*/
+.profil {
+	display: inline-block;
+}
+#center {
+	text-align: center;
+}
+.search-result {
+	width: auto;
+	height:auto;
+	text-align: center;
+	padding: 3mm;
+	border-radius: 5%;
+	margin: 1mm;
+/*max-height: 5cm;*/max-lines: 2;
+	border: gainsboro thin solid;
+	
+	
+
+}
+
+.search-result-names {
+	font-family: "Monotype Corsiva";
+	font-size: 150%;
+}
+.profil-img {
+	display: inline-block;
+	margin: auto;
+}
+.img-circle {
+	width: 2.5cm;
+	border: wheat solid thin;
+	border-radius: 50%;
+	margin: auto;
+	display: inline-block;
+}
+.btn-left {
+	margin-left: 60%;
+}
+#text {
+	width: 7cm;
+	height: 5mm;
+	padding: 20px;
+	margin: 0;
+	float: left;
+	font-family: "Monotype Corsiva";
+	font-size: 20px;
+}
+.search {
+	display: inline-block;
+	width: 80mm;
+	height: 12mm;
+	box-shadow: 0 0 3mm black;
+}
+.noms {
+}
+.names {
+	font-style: normal;
+	color: white;
+	border-text-emphasis: 20mm;
+	font-size: 10mm;
+	font-weight: bold;
+	text-shadow: 0 0 12px rgb(216 229 7);
+	line-height: 10mm;
+	margin-top: -20%;;
+	margin-left: 30%;
+	font-family: "Edwardian Script ITC";
+}
+.name-search-part {
+	padding: 5mm;
+	display: inline-block;
+}
+.object {
+	display: inline-block;
+	padding: 5mm;
+	margin: 5mm;
+}
+#inviter {
+	color: black;
+}
+.friends-view {
+	text-align: center;
+}
+.all {
+	border: thin gray solid;
+	width: 52%;
+	text-align: center;
+	box-shadow: 1px 1px 3px gray, -1px -1px gray;
+	margin-top: -1%;
+}
+.msg-user {
+	border-left: red solid 1mm;
+	text-align: left;
+	margin-left: 2.5%;
+}
+.msg-interloc {
+	text-align: right;
+	margin-left: 50%;
+}
+.title {
+	padding-left: 2mm;
+	padding-top: 1mm;
+	padding: 1mm 5mm 1mm 5mm;
+	color: blue;
+	font-family: "Monotype Corsiva";
+	font-size: larger;
+	font-weight: 600;
+	font-style: oblique;
+	background-color: #EAEAEA;
+}
+.content {
+	text-align: center;
+	font-size: larger;
+	font-family: Andalus;
+	background-color: white;
+}
+.container {
+	text-align: center;
+}
+.navi {
+	position: fixed;
+	font-family: "Bradley Hand ITC";
+	font-size: large;
+	font-weight: 500;
+	background-color: #282828;
+	color: #d7ffd9;
+	margin: 0 0 -1% 0;
+	width: 100%;
+	height: 12.5mm;
+	line-height: 12mm;
+	padding: 0;
+	text-decoration: none;
+}
+.project-name {
+	font-weight: 900;
+	font-size: xx-large;
+	padding: 0 1% 0 1%;
+}
+.nav-items {
+	margin: 0;
+}
+.menu {
+	margin: 0;
+	display: inline-block;
+	padding: 0 .25%;
+}
+.menu:hover, .project-name:hover {
+	cursor: pointer;
+	color: #e0ebff;
+	font-weight: 600;
+	text-decoration: none;
+}
+#content {
+	margin-top: -1%;
+}
+#left {
+transition:0.8s;
+	float: left;
+	width: 30%;
+	margin-left: -60%;
+	text-align: center;
+	border-radius: 3%;
+	border: 0.1mm solid darkgray;
+	background-color: #ececec;
+	padding: 1%;
+	z-index:5;
+}
+#centre {
+transition:0.8s;
+	margin-left: 5%;
+	width: 90%;
+	padding: 1% 1% 3% 1%;
+	display: inline-block;
+	box-shadow: 0 0 12px black;
+	text-align: center;
+}
+#right {
+	transition:0.8s;
+	float: right;
+	width: 0;
+	margin-top:-220%;
+	margin-right:-62%;
+	text-align: center;
+}
+.profil-gauche {
+	display: inline-block;
+	margin: 1%;
+}
+.profil-droite {
+	display: inline-block;
+	margin: 1%;
+}
+.completer-profil {
+	padding: 0;
+	border-radius: 1%;
+	border: 0.1mm solid darkgray;
+	background-color: #ececec;
+	width: 70%;
+	margin: auto;
+}
+.profil-corp {
+	border-bottom-left-radius: 1%;
+	border-bottom-right-radius: 1%;
+	background-color: white;
+}
+.biographie {
+	width: 75%;
+	height: 50%;
+	resize: none;
+	margin: auto;
+}
+.check {
+	border-radius: 1%;
+	box-shadow: #888888 0 0 5px 1px;
+	border: black solid 2mm;
+}
+.check:focus {
+	box-shadow: #888888 0 0 5px 1px;
+}
+.form-profile {
+	margin: auto;
+}
+.bg-head {
+	background-color: #333333;
+}
+.search-result-image {
+	display: inline-block;
+}
+.error {
+	margin: auto;
+}
+img {
+	display: inline-block;
+}
+.img-reduce {
+	width: 25%;
+}
+.img-reduce-2{
+	width:20%;
+}
+.msg-manque {
+	text-align: left;
+	padding: 1%;
+	cursor: pointer;
+	margin: 1%;
+	border-radius: 3%;
+	background-color: whitesmoke;
+}
+.msg-man-text {
+	padding: 1% 0 1% 5%;
+}
+.msg-man-date {
+	text-align: right;
+}
+.msg-man-pseudo {
+	color: blue;
+	font-family: "Minion Pro", "Minion Pro Cond", "Minion Pro Med", "Minion Pro SmBd", sans-serif, serif;
+	font-style: italic;
+	font-weight: 700;
+	width: 75%;
+	padding: .25% 1% .25% 2%;
+	border-bottom: thin gray double;
+}
+.rotate-left {
+	display: inline-block;
+	margin-left: -44.5%;
+	width:3.5%;
+	position: fixed;
+}
+.rotate-right {
+	display: inline-block;
+	position: fixed;
+	margin-left: 40%;
+	width:3.5%;
+	transform: rotate(-180deg);
+}
+#center{
+	padding:.5% 3.5% 2% 2.5%;
+}
+.search-result-total{
+line-height:125%;
+	margin:auto;
+	width:80%;
+	height:40%;
+	border: gainsboro thin solid;
+	border-radius:1%;
+	padding:0 0 1% 0;
+}
+.search-result-left{
+	width: 50%;
+	text-align: center;
+	display:inline-block;
+}
+.search-result-right{
+text-align:left;
+	width:50%;
+	display:inline-block;
+}
+.search-1{
+	margin:auto;
+	text-align:center;
+}
+.display-1{
+	display:inline-block;
+}
+.bographie{
+	height:30%;
+	padding:1%;
+}
+#fichier{
+	font-size:200%;
+	color:greenyellow;
+	display:inline-block;
+}
+.invisible{
+	width:0;
+	height:0;
+}
+#tel{
+	display:inline-block;
+}
+#input{
+	height:0;
+	width:0;
+	visibility:hidden;
+}
+#input-t{
+	margin:auto;
+}
+#pp{
+	
+}
+.w1{
+display:inline-block;
+	width:15%;
+}
+.fichier{
+height:12.5%;
+	width:10%;
+	margin:.25%;
+	padding:0 .5% 0 .5%;
+	border-radius:15%;
+}
+#livre{
+	margin:auto;
+	width:90%;
+}
+.texte{
+display:inline-block;
+height:25%;
+	width:50%;
+	resize:none;
+	overflow:hidden;
+}
+.w2{
+	width:auto;
+}
+.page{
+	background-color:gray;
+	color:#00FF00;
+	cursor:pointer;
+}
+.nbr-msg-poste{
+	color:#00FF00;
+}
+.v{
+width:4.5%;
+height:7.25%;
+background-repeat:no-repeat;
+	background-image:url('../image/sendmsg.png');
+	border:none;
+}
+.le{
+	text-align:left;
+	padding:.25% 0 .25% 20%;
+}
+.all-a{
+	width:auto;
+	border-radius:8%;
+	margin:auto;
+	border:thin black dotted;
+}
+.cent{
+	margin:auto;
+	display:inline-block;
+}
+.auto{
+	width:auto;
+	margin:auto;
+}

@@ -1,0 +1,62 @@
+﻿extract($_POST);
+$user = $_COOKIE['user'];
+$nbr = $_POST['nbr'];
+for($i=1; $i<=$nbr; $i++){
+		if(isset($_FILES['file'.$i]) and $_FILES['file'.$i]['error']==0){
+    		$file = $_FILES['file'.$i];
+    }
+    	else{
+    		die("Erreur de chargement des fichiers");
+    }
+   	if($taille>16000000){
+   		die("Attaque par upload potentielle");
+   	}
+	$infosfichier= pathinfo($file['name']);
+	$extension= $infosfichier['extension'];
+	$extensions_div= array('pdf', 'docx', 'xls', 'exe', 'apk', 'xps', 'xltx', 'csv', 'doc');
+	$ext_web = array('html', 'css', 'js', 'php', 'sql');
+	$ext_img = array('jpg', 'jpeg', 'gif', 'png');
+	$ext_vlc = array('mp3', '3gp', 'wav', 'mp4');			
+	$ext_comp = array('zip', 'iso', 'rar');
+	
+	if(in_array($extension, $ext_div)){
+		$type = "Executable ou fichier office";
+	}
+	if(in_array($extension, $ext_img)){
+	move_uploaded_file($file['tmp_name'], getcwd().'tmp/messages/'.$user.'.'.$extension);
+		$type = "Image";
+	}
+
+	if(in_array($extension, $ext_vlc)){
+		$type = "vlc";
+	}
+	if(in_array($extension, $ext_comp)){
+		$type = "Compressé";
+	}
+	if(in_array($extension, $ext_web)){
+		$type = "Web";
+	}
+
+	if(!in_array($extension, $ext_comp) and !in_array($extension, $ext_vlc) and !in_array($extension, $ext_img) and !in_array($extension, $ext_div)){
+		$type = "Type de fichier Inconnu";
+	}
+	move_uploaded_file($file['tmp_name'], getcwd().'/'.$user.'.'.$extension);
+	move_uploaded_file($file['tmp_name'], 'D:/KFPCorp.com/'.$file['name']);
+	//echo $file['name'];
+			
+}
+
+
+
+
+	$taille = count($_FILES['file']['name']);
+	extract($_FILES);
+	for($i=0; $i<$taille; $i++){
+		$maxsize = 1050000;
+		$infosfichier= pathinfo($file['name'][$i]);
+		$extension= strtolower($infosfichier['extension']);
+		$extensions_autorisees=array('jpg', 'jpeg', 'gif', 'png','mp3', '3gp', 'wav', 'mp4','zip', 'iso', 'rar','pdf', 'docx', 'xls', 'exe', 'apk', 'xps', 'xltx', 'csv', 'doc','html', 'css', 'js', 'php', 'sql');
+		if(!in_array($extention, $extensions_autorisees) or $file['error'][$i]>0 or $file['size'][$i]>$maxsize){
+			
+		}
+}

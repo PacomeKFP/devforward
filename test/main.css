@@ -1,0 +1,314 @@
+﻿body {
+	padding-top: 90px;
+	padding-bottom:20px;
+}
+.page{
+    display: inline-block;
+}
+.error {
+	margin:0;
+	width: 33.33333333%;
+}
+.inter-name{
+    display: inline-block;
+}
+.inter-statut{
+    width: 2mm;
+    height: 2mm;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 1mm;
+    border: greenyellow solid thin;
+}
+.msg-content{
+    padding: 5mm;
+    border: gray solid 1mm;
+    width: 75%;
+}
+.display{
+    display: inline-block;
+    margin-top: -10mm;
+}
+.msgText{
+    display: inline-block;
+    overflow-y: hidden;
+    width: 30%;
+    resize: none;
+}
+/*Structure de la page user*/
+
+.page-header{
+	margin-top: -70px;
+    background-color: #888888;
+    padding: 0;
+    margin-top: -20mm;
+}
+.left{
+	float:left;
+	height:20cm;
+    margin-top: -5.5mm;
+    display: inline-block;
+}
+.center{
+	box-shadow:0 0 12px black;
+    margin-top: -5.5mm;
+    display: inline-block;
+    margin-left: -7mm;
+}
+.right{
+    display: inline-block;
+	height:100%;
+    /*background-color: red;*/
+	margin-top: -20cm;
+	margin-left: 29cm;
+	border-left: 0.005mm solid gainsboro;
+    overflow: hidden;
+
+}
+.select{
+    width: 5mm;
+    display: inline-block;
+}
+.right:hover{
+    overflow-x: visible;
+}
+.msg-box{
+	border-radius:5mm 5mm 0 0;
+	width:6.5cm;
+	height:9.5cm;;
+	background-color:white;
+	position: fixed;
+	margin-left:47%;
+	margin-top:-2.25%;
+	visibility: hidden;
+    border: orange solid medium ;
+    resize: both;
+    user-select: none;
+    -moz-user-select: none;
+
+    -moz-user-drag: auto;
+}
+
+.msg-box-header{
+	height:15%;
+	border-radius:4mm 4mm 0 0;
+	background-color:blue;
+    resize: none;
+	display: inline-block;
+	width: 100%;
+}
+.destinataire{
+	text-align: center;
+	color: deeppink;
+	font-family: "Lucida Handwriting";
+	width: 90%;
+	height: 50%;
+	background-color: orange;
+	margin-top: 6mm;
+	margin-left: 1mm;
+	display: inline-block;
+}
+.close{
+	display: inline-block;
+	margin-top: -13.5mm;
+	margin-right: 4mm;
+	/*width: 5%;*/
+	border-radius: 25%;
+	background-color: deeppink;
+	color: deeppink;
+	border-color: deeppink;
+}
+
+.msg-box-content{
+	background-color:cornsilk;
+	height:85%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	overflow-style:marquee-line;
+    resize: none;
+}
+.msg-box-content:hover{
+    overflow-y: auto;
+}
+.file{
+    width: 3mm;
+    height: 3mm;
+}
+.msg-piece{
+    display: inline-block;
+    background-color: red;
+    width: 3mm;
+    height: 3mm;
+    margin-top: 7mm;
+    float: right;
+    margin-right: 4mm;
+}
+.msg-box-text{
+	height:20%;
+    width:inherit;
+	/*margin:50mm auto 0 auto;*/
+
+    resize: none;
+}
+.msg-box-textarea{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:4mm;
+    margin-top: 1mm;
+	height:85%;
+    width: 85%;
+	color: gray;
+    margin-left: 3%;
+	cursor: context-menu;
+    resize: inherit;
+
+}
+
+.pieces{
+    visibility: visible;
+    width: 5mm;
+    height: 5mm;
+    background-color: blue;
+    margin-top: -20mm;
+    /*margin-left: 30mm;*/
+    visibility: hidden;
+}
+
+#pieceHeadEmoji{
+    visibility: hidden;
+}
+#pieceHeadPhoto{
+    visibility: hidden;
+}
+#pieceBodyEmoji{
+    visibility: hidden;
+}
+#pieceBodyPhoto{
+    visibility: hidden;
+}
+
+.msg-box-contentView{
+    height: 68%;
+	border:thick transparent solid;
+	overflow-x: auto;
+    overflow-y: hidden;
+    background-color: lightgray;
+}
+.btn-prime{
+    width: 35%;
+    margin-top: 1%;
+    margin-left: 32.5%;
+    /*background: url("../image/mail.png") no-repeat;*/
+}
+/*.btn-prime:hover{*/
+	/*height:8.5mm;*/
+	/*width:20mm;*/
+	/*margin-top:-2mm;*/
+	/*margin-left:12mm;*/
+/*}*/
+.profil{
+    display: inline-block;
+}
+#center{
+    text-align: center;
+}
+.search-result{
+    width: auto;
+    max-width: 6.5cm;
+    text-align: center;
+    padding: 3mm;
+    border-radius: 5%;
+    margin: 1mm;
+    /*max-height: 5cm;*/
+    max-lines: 5;
+    border: gainsboro thin solid;
+    display: inline-block;
+}
+.search-result-names{
+    font-family: "Monotype Corsiva";
+    font-size: 150%;
+}
+
+.profil-img{
+    display: inline-block;
+    margin:auto;
+}
+.img-circle{
+    width: 2cm;
+    height: 2cm;
+    border: gainsboro solid medium;
+    border-radius:50%;
+	margin: auto;
+    display: inline-block;
+}
+.btn-left{
+    margin-left:60%;
+}
+#text{
+    width: 7cm;
+    height: 5mm;
+    padding:20px;
+    margin:0;
+    float:left;
+    font-family:"Monotype Corsiva";
+    font-size:20px;
+}
+.search{
+    display: inline-block;
+    width: 80mm;
+    height: 12mm;
+    box-shadow: 0 0 3mm black;
+}
+.noms{
+}
+.names{
+    font-style: normal;
+    color: white;
+    border-text-emphasis: 20mm;
+    font-size: 10mm;
+    font-weight: bold;
+    text-shadow: 0 0 12px rgb(216 229 7);
+    line-height: 10mm;
+    margin-top: -17mm;
+    margin-left: 25mm;
+    font-family: "Edwardian Script ITC";
+}
+.name-search-part{
+    padding: 5mm;
+    display: inline-block;
+}
+.object{
+    display: inline-block;
+    padding: 5mm;
+    margin: 5mm;
+}
+b{
+    font-size: 4.1mm;
+    text-decoration: white underline;
+}
+.search-result{
+
+}
+.search-result-title{
+    background-color: green;
+}
+.search-result-nom{
+
+}
+.search-result-pseudo{
+
+}
+#inviter{
+    color: black;
+}
+.friends-view{
+	text-align: center;
+}
+.statut{
+	width: 1mm;
+	height: 1mm;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: deeppink;
+}
+
